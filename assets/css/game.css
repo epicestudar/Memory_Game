@@ -11,4 +11,19 @@
     width: 100%;
     aspect-ratio: 3/4; /* propriedade para ajustar a altura dos cards */
     background-color: black;
+    position: relative;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.front{
+    background-color: red;
+}
+
+.back{
+    background-color: blue;
 }

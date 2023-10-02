@@ -15,8 +15,8 @@
 }
 
 .face{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     position: absolute;
 }
 
@@ -25,5 +25,7 @@
 }
 
 .back{
-    background-color: blue;
+    background-image: url(/assets/images/dinossauro.png);
+    background-size: cover;
+    background-position: center;
 }

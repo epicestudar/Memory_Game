@@ -12,6 +12,8 @@
     aspect-ratio: 3/4; /* propriedade para ajustar a altura dos cards */
     background-color: black;
     position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
 }
 
 .face{
@@ -28,4 +30,9 @@
     background-image: url(/assets/images/dinossauro.png);
     background-size: cover;
     background-position: center;
+    backface-visibility: hidden;
+}
+
+.card-game:hover{
+    transform: rotateY(180deg);
 }

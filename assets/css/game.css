@@ -14,22 +14,26 @@
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
+    border-radius: 5px;
 }
 
 .face{
     width: 200px;
     height: 200px;
     position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(112, 112, 228);
+    border-radius: 5px;
 }
 
 .front{
-    background-color: red;
+    background-image: url(/assets/images/dinossauro.png);
+    transform: rotateY(180deg);
 }
 
 .back{
-    background-image: url(/assets/images/dinossauro.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(/assets/images/front.png);
     backface-visibility: hidden;
 }
 

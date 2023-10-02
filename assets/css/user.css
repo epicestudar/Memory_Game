@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    width: 100px;
+}
+.login-form{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-game{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title-game h1{
+    color: rgb(91, 91, 223);
+}
+.name_user{
+    border: 2px solid rgb(86, 68, 129);
+    border-radius: 8px;
+    color: black;
+    font-size: 1em;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+}
+.btn-game{
+    background-color: rgb(120, 230, 135);
+    border-radius: 8px;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 100px;
+}
+
+.btn-game:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}

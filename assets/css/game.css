@@ -4,7 +4,7 @@
     max-width: 800px;
     grid-template-columns: repeat(5, 1fr); /* vai repetir em 5 colunas com 1 fração */
     gap: 20px;
-    margin: 0 auto;
+    margin: 0 auto; /* vai repetir em 5 colunas com 1 fração */
 }
 
 .card-game{

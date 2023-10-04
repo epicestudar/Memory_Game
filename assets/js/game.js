@@ -1,6 +1,20 @@
 /* Variables */
 const gridGame = document.querySelector('.grid-game');
 
+const characters = [
+    'burro',
+    'cabra',
+    'dinossauro',
+    'macaco',
+    'ovo',
+    'passaro',
+    'peixe',
+    'raposa',
+    'skul',
+    'tartaruga',
+    'urso',
+];
+
 /* Functions */
 const createElement = (tag, className) => { // method, parameter
     const element = document.createElement(tag); // calling the method
@@ -19,4 +33,11 @@ const createCard = () => {
     return cardGame;
 }
 
-createCard();
+const loadGame = (characters) => {
+    characters.forEach(() => {
+        const card = createCard();
+        gridGame.appendChild(card);
+    });
+}
+
+loadGame();

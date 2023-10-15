@@ -1,42 +1,78 @@
-.grid-game{
-    display: grid;
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: aliceblue;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
     width: 100%;
     max-width: 800px;
-    grid-template-columns: repeat(5, 1fr); /* vai repetir em 5 colunas com 1 fração */
-    gap: 20px;
-    margin: 0 auto; /* vai repetir em 5 colunas com 1 fração */
-}
-
-.card-game{
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
     width: 100%;
-    aspect-ratio: 3/4; /* propriedade para ajustar a altura dos cards */
-    background-color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
-    border-radius: 5px;
-}
-
-.face{
-    width: 200px;
-    height: 200px;
+    background-color: #ccc;
+  }
+  
+  .face {
+    width: 100%;
+    height: 100%;
     position: absolute;
     background-size: cover;
     background-position: center;
-    border: 2px solid rgb(112, 112, 228);
+    border: 5px solid #00b5cc;
     border-radius: 5px;
-}
-
-.front{
-    background-image: url(/assets/images/dinossauro.png);
+    transition: all 400ms ease;
+  }
+  
+  .front {
     transform: rotateY(180deg);
-}
-
-.back{
-    background-image: url(/assets/images/front.png);
+  }
+  
+  .back {
+    background-image: url('../images/back.png');
     backface-visibility: hidden;
-}
-
-.card-game:hover{
+  }
+  
+  .reveal-card {
     transform: rotateY(180deg);
-}
+  }
+  
+  .disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+  }
+  
+  @media screen and (max-width:920px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+  
+    }
+  }

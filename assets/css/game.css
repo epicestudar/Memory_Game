@@ -13,13 +13,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(86, 68, 129);
     font-size: 1.2em;
     width: 100%;
     max-width: 800px;
     padding: 30px;
     margin: 0 0 30px;
     border-radius: 5px;
+    color: white;
   }
   
   .grid {
@@ -34,6 +35,7 @@ main {
   .card {
     aspect-ratio: 3/4;
     width: 100%;
+    height: 160px;
     border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
@@ -68,6 +70,21 @@ main {
   .disabled-card {
     filter: saturate(0);
     opacity: 0.5;
+  }
+
+  footer{
+    margin-top: 15%;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .name{
+    color: white;
   }
   
   @media screen and (max-width:920px) {
